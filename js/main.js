@@ -19,6 +19,15 @@ gsap.from("#digiman", {
 	yoyo:true,
 })
 
+gsap.from(".binary", {
+	y:10,
+	duration:5,
+	scale:30,
+	opacity:0,
+	ease:"back.out(1.7)",
+	repeat:-1,
+})
+
 
 const races = document.querySelector(".races");
 console.log(races.offsetWidth)
