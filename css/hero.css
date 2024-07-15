@@ -1,0 +1,54 @@
+:root {
+    --black: black;
+    --brown: #979086;
+    --bg: #e7e4dc;
+    --yellow: #cfd858;
+    --green: #454e3e;
+    --tomato: #ff917e;
+    --highlight:#ff775f;
+    --white-smoke: #e9e9e9;
+    --white: white;
+    --monstreat:"Montserrat", sans-serif;
+    --raleway:"Raleway", sans-serif;
+    --lato:"Raleway", sans-serif;
+    --josefin: "Josefin Sans", sans-serif;
+    --inter: "Inter", sans-serif;
+    --outfit:"Outfit", sans-serif;
+    --freeman:"Freeman", sans-serif;
+    --bebas:"Bebas Neue", sans-serif;
+    --anton:"Anton SC", sans-serif;
+    --heebo:"Heebo", sans-serif;
+    --bar-width:30px;
+    --bar-height:5px;
+    --hamburger-gap:3px;
+    --foreground:#333;
+    --background:white;
+    --hamburger-margin:8px;
+    --animation-timing:200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2);
+}
+
+*,*::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.hero{
+    top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+
+.hero-text{
+    font-size: 3.75rem;
+    font-family: var(--heebo);
+    font-weight: 700;
+    line-height: 5rem;
+  
+}

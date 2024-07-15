@@ -1,0 +1,179 @@
+:root {
+    --black: black;
+    --brown: #979086;
+    --bg: #e7e4dc;
+    --yellow: #cfd858;
+    --green: #454e3e;
+    --tomato: #ff917e;
+    --highlight:#ff775f;
+    --white-smoke: #e9e9e9;
+    --white: white;
+    --monstreat:"Montserrat", sans-serif;
+    --raleway:"Raleway", sans-serif;
+    --lato:"Raleway", sans-serif;
+    --josefin: "Josefin Sans", sans-serif;
+    --inter: "Inter", sans-serif;
+    --outfit:"Outfit", sans-serif;
+    --freeman:"Freeman", sans-serif;
+    --bebas:"Bebas Neue", sans-serif;
+    --anton:"Anton SC", sans-serif;
+    --heebo:"Heebo", sans-serif;
+    --bar-width:30px;
+    --bar-height:5px;
+    --hamburger-gap:3px;
+    --foreground:#333;
+    --background:white;
+    --hamburger-margin:8px;
+    --animation-timing:200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2);
+}
+
+*,*::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.grid{
+    background-color: var(--bg);
+    height: 80vh;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns:2fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* border: 0.15rem var(--green) solid; */
+    margin-bottom: 8rem;
+    
+}
+
+.grid-section{
+    background-color: var(--green);
+    font-family: var(--raleway);
+    border-radius: 1.25rem;
+    color: #e9e9e9;
+   
+}
+
+
+
+#line{
+    width: 70vw;
+    height: 1px; 
+    background-color: black; 
+    margin: 0 auto; 
+}
+.one{
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+}
+
+.two{
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.we{
+    width: 50px;
+}
+
+.three{
+    grid-area: 1/3/3/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.bento-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: #000 1px solid; */
+    height: 20%;
+    width: 100%;
+}
+
+.bento-card-img{
+    width: 1.2rem;
+}
+
+.bento-card-title{
+    font-family: var(--raleway);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.we-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius:  200%;
+    background-color: var(--bg);
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius:  200%;
+    background-color: var(--bg);
+}
+
+.four{
+    grid-area: 1/4/4/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.binary-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--freeman);
+}
+
+.binary{
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+#big-text{
+    font-family: var(--freeman);
+    font-size: 4rem;
+}
+
+.seven{
+    grid-area: 2/1/4/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eight{
+    grid-area: 3/3/4/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nine{
+    grid-area: 3/4/4/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

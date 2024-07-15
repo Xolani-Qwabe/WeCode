@@ -15,45 +15,43 @@ gsap.from("#digiman", {
 	duration:5,
 	scale:0,
 	opacity:0,
-	ease:"back.out(2.7)",
+	ease:"back.out(1.7)",
 	yoyo:true,
 })
 
 gsap.from(".binary", {
 	y:10,
 	duration:5,
-	scale:30,
+	scale:22,
 	opacity:0,
 	ease:"back.out(1.7)",
+	delay:1,
 	repeat:-1,
+	
 })
 
 
-const races = document.querySelector(".races");
-console.log(races.offsetWidth)
 
-function getScrollAmount() {
-	let racesWidth = races.scrollWidth;
-	return -(racesWidth - window.innerWidth);
-}
+gsap.registerPlugin(ScrollTrigger)
+// gsap.defaults({ease:"none", duration:2})
 
-const tween = gsap.to(races, {
-	x: getScrollAmount,
-	duration: 3,
-	ease: "none",
-});
+let sections = gsap.utils.toArray(".panel");
 
+gsap.to(sections, {
+	xPercent:-1000,
+	ease:"none",
+	// duration:15,
+	scrollTrigger:{
+		trigger:".slide-container",
+		start:"top top",
+		pin:true,
+		// pinSpacing:false,
+		scrub:1,
+		snap:1 / 10,
+		markers:true,
+		endTrigger: "#end-trigger",
+		end:"bottom bottom",
+		// end:() => "+=" + document.querySelector(".container").offsetWidth
 
-ScrollTrigger.create({
-	trigger:".racesWrapper",
-	start:"top 20%",
-	end: () => `+=${getScrollAmount() * -1}`,
-	pin:true,
-	animation:tween,
-	scrub:1,
-	invalidateOnRefresh:true,
-	markers:true
+	}
 })
-
-
-   
