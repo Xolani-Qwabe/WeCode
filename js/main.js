@@ -46,9 +46,9 @@ gsap.to(sections, {
 		start:"top top",
 		pin:true,
 		// pinSpacing:false,
-		scrub:1,
+		scrub:2,
 		snap:1 / 10,
-		markers:true,
+		// markers:true,
 		endTrigger: "#end-trigger",
 		end:"bottom bottom",
 		// end:() => "+=" + document.querySelector(".container").offsetWidth

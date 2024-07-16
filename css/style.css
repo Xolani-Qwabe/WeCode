@@ -40,6 +40,7 @@ body{
 }
 
 
+
 .section-title{
     position: relative;
     margin-top:.5vh ;
@@ -51,6 +52,13 @@ body{
     left: 15vw;
 }
 
+
+#line-two{
+    width: 40vw;
+    height: 1px; 
+    background-color: black; 
+    margin: 1rem auto; 
+}
 
 .content{
     width: 70vw;
@@ -76,6 +84,17 @@ body{
 
 .we:hover {
     transform: scale(0.5);
+}
+
+.my-button{
+    width: 15vw;
+    height: 10vh;
+    border-radius: 2.5rem;
+    border:2px var(--green) solid;
+    background-color: transparent;
+    color:var(--tomato);
+    font-family: var(--freeman);
+    font-size: 1.2rem;
 }
 
 
